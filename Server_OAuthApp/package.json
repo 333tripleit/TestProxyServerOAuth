@@ -1,0 +1,21 @@
+{
+  "name": "sotn2-auth-server",
+  "version": "1.0.0",
+  "description": "OAuth proxy server for SOTN2 map editing",
+  "main": "Server_OAuthApp.js",
+  "scripts": {
+    "start": "node Server_OAuthApp.js"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "session-file-store": "^1.5.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
