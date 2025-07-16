@@ -26,13 +26,17 @@ let isDeploying = false;
 
 const WEEK = 60 * 60 * 24 * 7
 
-app.use(cors({
+const corsOptions = {
   origin: [
     'https://333tripleit.github.io',
     'https://333tripleit.github.io.'
   ],
   credentials: true
-}));
+};
+
+app.use(cors(corsOptions));
+
+app.options('*', cors(corsOptions));
 
 app.use(cookieParser());         
 
